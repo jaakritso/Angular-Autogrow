@@ -58,6 +58,7 @@
 
                 $scope.offset = $scope.getOffset();
                 $scope.lineHeight = ($element[0].scrollHeight / $scope.attrs.rows) - ($scope.offset / $scope.attrs.rows);
+                $scope.lineHeight = $scope.lineHeight < 1 ? $scope.attrs.rows * lineHeight($element[0]) : $scope.lineHeight;
                 $scope.maxAllowedHeight = ($scope.lineHeight * $scope.attrs.maxLines) - $scope.offset;
 
                 $element[0].addEventListener('input', $scope.autogrowFn);

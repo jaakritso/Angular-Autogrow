@@ -6,6 +6,9 @@
   "authors": [
     "Evyatar Rosner <evyatar@codingaspect.com>"
   ],
+  "dependencies": {
+    "line-height": "~0.1.1"
+  },
   "description": "Angular high-performance directive for auto-grow / auto-resize of textarea elements on typing.",
   "keywords": [
     "angular-textarea",
